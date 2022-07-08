@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 3px;
+        margin-bottom: 5px;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome" placeholder="Nome da nave..." />
+    </section>
+
+    <section>
+      <label for="velocidade">Velocidade</label
+      ><input type="number" name="velocidade" id="velocidade" readonly />
+    </section>
+
+    <section class="buttons">
+      <button type="button" id="acelerar">Acelerar</button>
+      <button type="button" id="desacelerar">Desacelerar</button>
+      <button type="button" id="mostrarResultado">Resultado</button>
+    </section>
+
+    <section id="resultado"></section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
